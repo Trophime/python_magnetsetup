@@ -94,7 +94,12 @@
 		    		{
 						"expr":"-materials_sigma*(materials_U/(2*pi)+magnetic_dphi_dt)/x:magnetic_dphi_dt:materials_sigma:materials_U:x",
 						"markers": {{part_electric}}
-		    		}
+		    		},
+		    		"sigma":
+		    		{
+						"expr":"materials_sigma:materials_sigma",
+						"markers": {{part_electric}}
+					}
 				}
 	    	}
 		},

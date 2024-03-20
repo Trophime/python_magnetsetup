@@ -147,7 +147,17 @@
 		    		{
 						"expr":"materials_sigma*(materials_U/(2*pi*x))*(materials_U/(2*pi*x)):materials_sigma:materials_U:x",
 						"markers": {{part_electric}}
-		    		}
+		    		},
+		    		"sigma":
+		    		{
+						"expr":"materials_sigma:materials_sigma",
+						"markers": {{part_electric}}
+					},
+		    		"k":
+		    		{
+						"expr":"materials_k:materials_k",
+						"markers": {{part_electric}}
+					}
 				}
 	    	}
 		},

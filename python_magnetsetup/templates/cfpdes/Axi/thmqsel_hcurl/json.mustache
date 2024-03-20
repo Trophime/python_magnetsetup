@@ -121,6 +121,7 @@
 				{{#boundary_Therm_Robin}}
 				"{{name}}":
 				{
+					"markers":{{markers}},
 					"expr1": "{{expr1}}",
 					"expr2": "{{expr2}}"
 				},
@@ -224,6 +225,16 @@
 						"expr": "elastic1_u_0/x:x:elastic1_u_0",
 						"markers": {{part_thermic}},
 						"representation":["element"]
+					},
+		    		"sigma":
+		    		{
+						"expr":"materials_sigma:materials_sigma",
+						"markers": {{part_electric}}
+					},
+		    		"k":
+		    		{
+						"expr":"materials_k:materials_k",
+						"markers": {{part_electric}}
 					}
 				}
 	    	}
